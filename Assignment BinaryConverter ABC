@@ -1,4 +1,4 @@
-BINARY CONVERTER A
+BinaryYConverterA.java
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class BinaryConverterA {
     }
 }
 
-BINARY CONVERTER B
+BinaryConverterB.java
 
 import java.util.Scanner;
 
@@ -80,7 +80,7 @@ public class BinaryConverterB {
     }
 }
 
-BINARY CONVERTER C
+BinaryConverterC.java
 
 import java.util.Scanner;
 
