@@ -1,0 +1,121 @@
+BINARY CONVERTER A
+
+import java.util.Scanner;
+
+public class BinaryConverterA {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        // convert using divide by 2 method
+        int rem;
+        String binary = "";
+
+        // keep dividing by 2 and get remainders
+        while (num > 0) {
+            rem = num % 2; // get the last bit
+            binary = rem + binary; // add to front
+            num = num / 2;
+        }
+
+        System.out.println("Binary: " + binary);
+
+        sc.close();
+    }
+}
+
+BINARY CONVERTER B
+
+import java.util.Scanner;
+
+public class BinaryConverterB {
+
+    // function to convert to binary and store in array
+    public static int[] toBinaryArray(int num) {
+        // handle 0 case
+        if (num == 0) {
+            return new int[] { 0 };
+        }
+
+        // count the bits we need
+        int temp = num;
+        int count = 0;
+        while (temp > 0) {
+            count++;
+            temp = temp / 2;
+        }
+
+        // make array to store bits
+        int bits[] = new int[count];
+
+        // fill array with remainders
+        temp = num;
+        for (int i = count - 1; i >= 0; i--) {
+            bits[i] = temp % 2; // store remainder
+            temp = temp / 2;
+        }
+
+        return bits;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        // convert to array
+        int result[] = toBinaryArray(num);
+
+        // print array contents
+        System.out.print("Array: ");
+        for (int j = 0; j < result.length; j++) {
+            System.out.print(result[j]);
+        }
+        System.out.println();
+
+        sc.close();
+    }
+}
+
+BINARY CONVERTER C
+
+import java.util.Scanner;
+
+public class BinaryConverterC {
+
+    // convert to binary and return as string
+    public static String toBinaryString(int num) {
+        if (num == 0) {
+            return "0";
+        }
+
+        String result = "";
+        int temp = num;
+
+        // divide by 2 and build string
+        while (temp > 0) {
+            int rem = temp % 2; // get remainder
+            result = rem + result; // add to front
+            temp = temp / 2;
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        // convert and print
+        String binary = toBinaryString(num);
+
+        System.out.println("Binary: " + binary);
+
+        sc.close();
+    }
+}
