@@ -1,4 +1,4 @@
-public class Assign0 {
+public class Assignment0 {
     public static void main(String[] args) {
 
         int[][] A = { {1,2,3}, {5, 6 , 7}  };
