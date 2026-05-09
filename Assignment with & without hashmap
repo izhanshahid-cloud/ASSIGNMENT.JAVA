@@ -1,4 +1,4 @@
-PRODUCTSUM_HM.JAVA
+ProductSum_HM.java
 
 import java.util.Scanner;
 import java.io.File;
@@ -45,7 +45,7 @@ class ProductSum_HM {
     }
 }
 
-PRODUCT SUM_NOHM.JAVA
+ProductSum_NoHM.java
 
 import java.util.Scanner;
 import java.io.File;
@@ -94,7 +94,7 @@ class ProductSum_NoHM {
     }
 }
 
-REPSUM_HM.JAVA
+RepSum_HM.java
 
 import java.util.Scanner;
 import java.io.File;
@@ -141,7 +141,7 @@ class RepSum_HM {
     }
 }
 
-REPSUM_NOHM.JAVA
+RepSum_NoHM.java
 
 import java.util.Scanner;
 import java.io.File;
